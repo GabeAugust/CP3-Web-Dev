@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 body{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
-    position: absolute;
     width: 100vw;
     height: 6rem;
-    background-color: black;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,4 +24,37 @@ header{
 
 header img{
     width: 3rem;
+}
+
+.form-section{
+    width: 80vw;
+   
+}
+.form-section form{
+    display: flex;
+    justify-content: space-between;
+}
+.container-select-checkbox .category{
+    font-size: 20px;
+    font-weight: 300;
+}
+.container-select-checkbox select{
+    width: 11rem;
+    height: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    font-size: 1rem ;
+    outline: none;  
+}
+
+
+
+.form-section button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
