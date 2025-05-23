@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedes Store</title>
-    <link rel="stylesheet" href="/assests/style.css">
-    <link rel="shortcut icon" href="/assests/img/Mercedes-Logo.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="shortcut icon" href="./assests/img/Mercedes-Logo.svg.png" type="image/x-icon">
 </head>
+
 <body>
-    
+    <header>
+        <img src="./assests/img/Mercedes-Logo.svg.png" alt="">
+    </header>
+
+    <h1> Mercedes-Benz: onde inovação encontra excelência — dirija o que inspira o mundo.</h1>
+
+
+
+    <section class="form-section">
+        <form id="form">
+            <div class="container-select-checkbox">
+                <label for="category" class="category">Categorias:</label>
+                <select name="category" id="category">
+                    <option value="">Selecione sua opção</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="eq">EQ</option>
+                    <option value="amg">AMG</option>
+                </select>
+
+                <label>
+                    <input class="checkbox" type="checkbox" name="availability" id="availability">
+                    Somente disponíveis
+                </label>
+            </div>
+            <button id="filterButton">Filtrar</button>
+        </form>
+    </section>
+
+    <section  class="section-product">
+        <h2>Sedan</h2>
+        
+        <div class="cards-container" id="sedan">
+            
+        </div>
+    </section>
+
+    <section  class="section-product" >
+        <h2>EQ Line – Electric Intelligence</h2>
+
+        <div class="cards-container" id="eq">
+            
+        </div>
+    </section>
+
+    <section  class="section-product">
+        <h2>AMG</h2>
+
+        <div class="cards-container" id="amg">
+            
+        </div>
+    </section>
 </body>
+
+<script src="./assests/app.js"></script>
 </html>
