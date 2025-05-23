@@ -26,6 +26,12 @@ header img{
     width: 3rem;
 }
 
+h1{
+    font-family: "Inter", sans-serif;
+    font-size: 36;
+    font-weight: 600;
+    width: 40rem;
+}
 .form-section{
     width: 80vw;
    
