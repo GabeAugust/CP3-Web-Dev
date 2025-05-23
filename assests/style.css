@@ -82,20 +82,26 @@ h1{
 
 .section-product h2{
     font-family: 1rem;
+    margin-bottom: 1rem;
 }
 
 .cards-container{
     width: 100%;
     display: flex;
     gap: 1.5rem;
-
+    flex-wrap: wrap;
 }
 
 .card{
-    height: 14rem;
-    background-color: #000000;
-    flex: 1;
+    width: 300px;
+    background-color: #000;
     color: #FFF;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .card img{
@@ -104,7 +110,7 @@ h1{
 }
 
 .card .card-about{
-    padding: 0.5rem 1rem;
+    padding:  1rem;
 }
 
 .card .card-about h2{
@@ -115,12 +121,8 @@ h1{
     font-size: 0.8rem;
 }
 
-.card:hover{
-    transform: scale(1.1);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
 
-.unavaible{
+
+.unavailable{
     opacity: 0.7;
 }
